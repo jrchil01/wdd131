@@ -1,0 +1,48 @@
+#content{
+    max-width: 60%;
+    margin: 40px auto;
+    padding: 50px;
+}
+
+h1{
+    text-align: center;
+    font-size: 3em;
+}
+
+h3{
+    text-align: center;
+    font-size: 1.3em;
+    color: cornflowerblue;
+    margin-bottom: 0px;
+}
+
+hr{
+    height: 1px;
+    color: lightgrey;
+    width: 60%;
+   
+}
+
+p{
+    text-align: left;
+    font-size: 1.3em;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-top: 30px;
+}
+
+ol{
+    font-size: 20px;
+    padding-right: 20%;
+    padding-left: 27%;
+}
+
+li{
+    padding-bottom: 15px;
+}
+
+img{
+    width: 20%;
+    display: block;
+    margin: 50px auto;
+}
