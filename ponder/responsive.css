@@ -33,6 +33,13 @@ section{
 nav a{
     padding: 20px;
     color: black;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border-top: 1pz solid gray;
+}
+
+.hide{
     display: none;
 }
 
@@ -52,6 +59,7 @@ nav a:hover{
     height: 4px;
     background-color: black;
     margin: 5px 0;
+    transition: 0.4s;
 }
 
 footer{
@@ -59,12 +67,12 @@ footer{
 }
 
 .change .bar1 {
-  transform: translate(0, 11px) rotate(-45deg);
+  transform: translate(0, 8.5px) rotate(-45deg);
 }
 .change .bar2 {opacity: 0;}
 
 .change .bar3 {
-  transform: translate(0, -11px) rotate(45deg);
+  transform: translate(0, -8.5px) rotate(45deg);
 }
 
 @media screen and (min-width: 700px) {
@@ -79,6 +87,9 @@ footer{
     }
     nav {
         text-align: center;
+    }
+    .hide{
+        display: block;
     }
 }
 
