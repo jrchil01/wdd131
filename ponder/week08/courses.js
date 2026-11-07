@@ -15,8 +15,7 @@ const aCourse = {
           this.sections[sectionIndex].enrolled++;
           renderSections(this.sections);
         }
-    }
-                  
+    }              
 };
 
 console.log(aCourse.code);
@@ -31,7 +30,7 @@ document.querySelector('img').style.width='100px';
 
 console.log(aCourse.sections[1].roomNum);
 
-function sectionTemplate(sectionNum) {
+function sectionTemplate(section) {
     return `<tr>
       <td>${section.sectionNum}</td>
       <td>${section.roomNum}</td>
