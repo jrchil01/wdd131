@@ -31,7 +31,7 @@ document.querySelector('img').style.width='100px';
 
 console.log(aCourse.sections[1].roomNum);
 
-function sectionTemplate(section) {
+function sectionTemplate(sectionNum) {
     return `<tr>
       <td>${section.sectionNum}</td>
       <td>${section.roomNum}</td>
