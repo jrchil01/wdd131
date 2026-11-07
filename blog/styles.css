@@ -35,14 +35,14 @@ nav a{
     
 }
 
-.info-card{
+#info-card{
     text-align: right;
     padding-right: 2rem;
     grid-row: 1/2;
     grid-column: 2/3;
 }
 
-.review{
+#review{
     padding-left: 2rem;
     grid-row: 2/3;
     grid-column: 1/2;
@@ -50,20 +50,20 @@ nav a{
     /* justify-items: center; */
 }
 
-.review h2{
+#review h2{
     color: crimson;
     text-align: center;
     grid-row: 1/2;
 }
 
-.review img{
+#review img{
     max-width: 50%;
     height: auto;
     justify-self: center;
     grid-row: 2/3;
 }
 
-.review p{
+#review p{
     justify-self: left;
     grid-row: 3/4;
 }
@@ -73,21 +73,21 @@ nav a{
         margin: 50px;
     }
 
-    .info-card{
+    #info-card{
         grid-column: 1/2;
     }
 
-    .review{
+    #review{
         grid-column: 2/3;
         grid-row: 1/2;
         border-left: 2px solid goldenrod;
     }
 
-    .review h2{
+    #review h2{
         text-align: left;
     }
 
-    .review img{
+    #review img{
         max-width: 100%;
     }
 }
