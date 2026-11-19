@@ -39,29 +39,52 @@ const articles = [
 	}
 ];
 
-const reviewList = document.querySelector('#review');
-const infoCard = document.querySelector('#info-card');
+// const reviewList = document.querySelector('.review');
+// const infoCard = document.querySelector('.info-card');
 
-articles.forEach(article => {
-    const entry = document.createElement('entry');
-    entry.className = 'article';
-    const info = document.createElement('info');
-    info.className = 'article';
+// articles.forEach(article => {
+//     const entry = document.createElement('entry');
+//     entry.className = 'article';
+//     const info = document.createElement('info');
+//     info.className = 'article';
 
-    let htmlReview = `
-            <h2>${articles.title}</h2>
-            <img src="${articles.imgSrc}" alt="${articles.imgAlt}">
-            <p>${articles.description}</p>`
+//     let htmlReview = `
+//             <h2>${article.title}</h2>
+//             <img src="${article.imgSrc}" alt="${articles.imgAlt}">
+//             <p>${article.description}</p>`
     
-    entry.innerHTML += htmlReview;
-    reviewList.appendChild(entry);
+//     entry.innerHTML += htmlReview;
+//     reviewList.appendChild(entry);
 
-    let htmlInfo = `
-            <p>${articles.date}</p>
-            <p>${articles.ages}</p>
-            <p>${articles.genre}</p>
-            <p>${articles.stars}</p>`
+//     let htmlInfo = `
+//             <p>${article.date}</p>
+//             <p>${article.ages}</p>
+//             <p>${article.genre}</p>
+//             <p>${article.stars}</p>`
 
-    info.innerHTML += htmlInfo;
-    infoCard.appendChild(info);
-});
+//     info.innerHTML += htmlInfo;
+//     infoCard.appendChild(info);
+// });
+
+function bookTemplate(article){
+return `	
+<div class="book-review">
+	<div class="info-card">
+		<p>${article.date}</p>
+		<p>${article.ages}</p>
+		<p>${article.genre}</p>
+		<p>${article.stars}</p>
+	</div>
+	
+	<div class="review">
+		<h2>${article.title}</h2>
+		<img src="${article.imgSrc}" alt="${articles.imgAlt}">
+		<p>${article.description}</p>
+	</div>
+</div>`
+
+}
+
+const html = articles.map(bookTemplate).join("");
+const main = document.querySelector('main');
+main.innerHTML = html;
